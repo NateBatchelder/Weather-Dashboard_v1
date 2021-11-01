@@ -18,70 +18,39 @@
 
 <!--  -->
 <body>
-    <div class="container">
+    <!-- heading 'Weather Dashboard' -->
+    <header>
         <!-- full width row -->
-        <div class="row">
-            <!-- heading 'Weather Dashboard' -->
-            <div class="column">
-
-            </div>
-        </div>
-
+        <div class="header=container">Weather Dashboard</div>
+    </header>
+        
         <!-- full width body, contains two columns -->
-        <div class="row">
-            <!-- col 1 section left 4-->
-            <!-- city search -->
-            <!-- past cities populate underneath search field -->
-            <div class="column">
-
-            </div>
-            <!-- col 2 section right 8-->
-            <!-- city information on top, 5 day focast on bottom -->
-            <div class="column">
-                <!-- row 1 -->
-                <div class="row">
-                    <!-- col 1 -->
-                    <!-- city 1 -->
-                    <div class="col">
-
+        <div class="container">
+            <div class="row main">
+                <div class="col-12 col-xl-4 search">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Enter the city you wish to search">
+                        <button type="button" id="search-button" class="search-button">Search</button>
+                    </div>
+                    <ul class="search-history" id="search-history"></ul> 
+                </div>
+                <div class="col-12 col-xl-8 weather-continer">
+                    <div class="row">
+                        <div class="col-12 current"></div>
+                            <div class="weather-icon"></div>
+                            <div class="weather-information"></div>
+                    </div>
+                    <div class="col-12 five-day">
+                        <div class="col-12 col-md-6 col-lg-2 five-day-box" id="day-0"></div>
+                        <div class="col-12 col-md-6 col-lg-2 five-day-box" id="day-1"></div>
+                        <div class="col-12 col-md-6 col-lg-2 five-day-box" id="day-2"></div>
+                        <div class="col-12 col-md-6 col-lg-2 five-day-box" id="day-3"></div>
+                        <div class="col-12 col-md-6 col-lg-2 five-day-box" id="day-4"></div>
                     </div>
                 </div>
-                <!-- row 2 -->
-                <!-- five day forcast -->
-                <div class="row">
-                    <!-- day +1 -->
-                    <div class="col">
-
-                    </div>
-                    <!-- day +2 -->
-                    <div class="col">
-
-                    </div>
-                    <!-- day +3 -->
-                    <div class="col">
-
-                    </div>
-                    <!-- day +4 -->
-                    <div class="col">
-
-                    </div>
-                    <!-- day +5 -->
-                    <div class="col">
-
-                    </div>
-
-                </div>
-
             </div>
-
-
-
-
-
         </div>
     </div>
-
-
 
     <footer>
 
@@ -90,6 +59,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+        
+        
+<!-- el fin -->
 </body>
-
 </html>

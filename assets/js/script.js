@@ -74,7 +74,7 @@ async function getLatLong(cityName) {
     var fullUrl = baseURL + "forecast?q=" + cityName + "&appid=" + apiKey + "&cnt=1";
 
     // console.log(fullUrl);
-    let getLatLong = await fetch(fullUrl)
+    let LatLong = await fetch(fullUrl)
         .then(function (response) {
             return response.json();
         })

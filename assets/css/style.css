@@ -1,0 +1,21 @@
+:root{
+    --grey: #3a3a3a;
+    --light-grey: #e1e1e1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+header {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    margin-bottom: 25px;
+}
