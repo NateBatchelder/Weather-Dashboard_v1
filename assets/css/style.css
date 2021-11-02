@@ -71,3 +71,75 @@ body {
     background-color: blanchedalmond;
 }
 
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    /* flexed items are packed at the start of the line */
+    justify-content: flex-start;
+}
+
+.row.five-day-container {
+    align-content: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.current {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.current-weather-container {
+    height: 70%;
+    width: 70%;
+    border: 2px solid black;
+}
+
+.weather-icon {
+    height: 30%;
+    width: 60%;
+    margin-bottom: 10px;
+    flex: 1 1 auto;
+}
+
+.weather-icon > * {
+    display: inline;
+}
+
+.weather-info {
+    margin-top: 10px;
+    height: 50%;
+    width: 50%;
+    font-weight: bold;
+}
+
+.weather-container {
+    height: 100%;
+}
+
+li span {
+    border-radius: 5px;
+    padding 2px;
+}
+
+.uvIndex-favorable {
+    background-color: green;
+}
+
+.uvIndex-moderate {
+    background-color: yellow;
+}
+
+.uvIndex-severe {
+    background-color: orange;
+}
